@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Customer:</b>
+  <%= @customer_bill.customer.name %>
+</p>
+
+<p>
+  <b>Total value:</b>
+  <%= @customer_bill.total_value %>
+</p>
+
+
+<%= link_to 'Edit', edit_customer_bill_path(@customer_bill) %> |
+<%= link_to 'Back', customer_bills_path %>
