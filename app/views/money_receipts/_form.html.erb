@@ -1,0 +1,21 @@
+<%= form_for(@money_receipt) do |f| %>
+  <% if @money_receipt.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@money_receipt.errors.count, "error") %> prohibited this money_receipt from being saved:</h2>
+
+      <ul>
+      <% @money_receipt.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :dr_amt %><br />
+    <%= f.text_field :dr_amt %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

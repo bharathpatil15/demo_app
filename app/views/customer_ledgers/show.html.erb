@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Total amt:</b>
+  <%= @customer_ledger.total_amt %>
+</p>
+
+<p>
+  <b>Customer bill:</b>
+  <%= @customer_ledger.customer_bill_id %>
+</p>
+
+<p>
+  <b>Customer:</b>
+  <%= @customer_ledger.customer_id %>
+</p>
+
+<p>
+  <b>Money receipt:</b>
+  <%= @customer_ledger.money_receipt_id %>
+</p>
+
+<p>
+  <b>Bill amt:</b>
+  <%= @customer_ledger.bill_amt %>
+</p>
+
+
+<%= link_to 'Edit', edit_customer_ledger_path(@customer_ledger) %> |
+<%= link_to 'Back', customer_ledgers_path %>

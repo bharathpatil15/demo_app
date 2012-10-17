@@ -1,0 +1,31 @@
+<h1>Listing customer_ledgers</h1>
+
+<table>
+  <tr>
+    <th>Total amt</th>
+    <th>Customer bill</th>
+    <th>Customer</th>
+    <th>Money receipt</th>
+    <th>Bill amt</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @customer_ledgers.each do |customer_ledger| %>
+  <tr>
+    <td><%= customer_ledger.total_amt %></td>
+    <td><%= customer_ledger.customer_bill_id %></td>
+    <td><%= customer_ledger.customer_id %></td>
+    <td><%= customer_ledger.money_receipt_id %></td>
+    <td><%= customer_ledger.bill_amt %></td>
+    <td><%= link_to 'Show', customer_ledger %></td>
+    <td><%= link_to 'Edit', edit_customer_ledger_path(customer_ledger) %></td>
+    <td><%= link_to 'Destroy', customer_ledger, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Customer ledger', new_customer_ledger_path %>

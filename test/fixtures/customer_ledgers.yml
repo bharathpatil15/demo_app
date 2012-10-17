@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  total_amt: 1.5
+  customer_bill_id: 1
+  customer_id: 1
+  money_receipt_id: 1
+  bill_amt: 1.5
+
+two:
+  total_amt: 1.5
+  customer_bill_id: 1
+  customer_id: 1
+  money_receipt_id: 1
+  bill_amt: 1.5

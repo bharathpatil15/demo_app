@@ -1,4 +1,8 @@
 DemoApp::Application.routes.draw do
+  resources :customer_ledgers
+
+  resources :money_receipts
+
   resources :customer_bills
 
   resources :customers

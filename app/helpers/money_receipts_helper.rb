@@ -1,0 +1,2 @@
+module MoneyReceiptsHelper
+end

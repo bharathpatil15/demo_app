@@ -1,0 +1,23 @@
+<h1>Listing money_receipts</h1>
+
+<table>
+  <tr>
+    <th>Dr amt</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @money_receipts.each do |money_receipt| %>
+  <tr>
+    <td><%= money_receipt.dr_amt %></td>
+    <td><%= link_to 'Show', money_receipt %></td>
+    <td><%= link_to 'Edit', edit_money_receipt_path(money_receipt) %></td>
+    <td><%= link_to 'Destroy', money_receipt, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Money receipt', new_money_receipt_path %>
